@@ -656,5 +656,35 @@ const products = [
       "apparel",
       "mens"
     ]
+  },
+  {
+    id: "id1",
+    image: "images/products/backpack.jpg",
+    name: "A Cool Backpack",
+    rating: {
+      stars: 5.0,
+      count: 6543
+    },
+    priceCents: 2600,
+    keywords: [
+      "backpack",
+      "item",
+      "accesory",
+      "mens" ]
+  },
+  {
+    id: "id1",
+    image: "images/products/umbrella.jpg",
+    name: "Waterproof Umbrella",
+    rating: {
+      stars: 5.0,
+      count: 324
+    },
+    priceCents: 1299,
+    keywords: [
+      "umbrella",
+      "rain",
+      "accesory",
+      "best" ]
   }
 ];
