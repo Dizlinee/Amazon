@@ -34,3 +34,20 @@
 
     saveToStorage();
     }
+
+    export function updateDeliveryOption(productId, deliveryOptionId) {
+    let matchingItem;
+
+    cart.forEach((item) => {
+        if (item.productId === productId) {
+        matchingItem = item;
+        }
+    });
+
+    if (!matchingItem) return;
+
+    matchingItem.deliveryOptionId = deliveryOptionId;
+
+    saveToStorage();
+    }
+
