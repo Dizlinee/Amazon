@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "javascript-13-amazon-project",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "javascript-13-amazon-project"
+	}
+}
