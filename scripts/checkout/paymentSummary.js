@@ -25,7 +25,7 @@
         </div>
 
         <div class="payment-summary-row">
-        <div>Items (im tired of you)</div>
+        <div>Items ()</div>
         <div class="payment-summary-money">
             $${formatCurrency(productPriceCents)}
         </div>
