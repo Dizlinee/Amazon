@@ -81,6 +81,27 @@ object3.method();
 */
 
 export let products = [];
+
+export function loadProductsFetch() {
+  const promise = fetch('https://supersimplebackend.dev/products'
+
+  ).then((response) => {
+    return response.json()
+  }).then((productsData) => {
+    products = productsData.map((ProductDetails) => {
+      if (ProductDetails.type === 'clothing') {
+        return new Clothing(ProductDetails)
+      }
+      return new Product(ProductDetails);
+    });
+      console.log()
+  })
+  return promise;
+}
+loadProductsFetch().then(() => {
+  console.log('next step')
+});
+
 export function loadProducts (fun) {
   const xhr = new XMLHttpRequest()
 
