@@ -20,13 +20,15 @@
     const taxCents = totalBeforeTaxCents * 0.1;
     const totalCents = totalBeforeTaxCents + taxCents;
 
+    const itemQuantity = cart.reduce((acc, item) => acc + item.quantity, 0);
+        
     const paymentSummaryHTML = `
         <div class="payment-summary-title">
         Order Summary
         </div>
 
         <div class="payment-summary-row">
-        <div>Items ()</div>
+        <div class="js-payment">Items (${itemQuantity})</div>
         <div class="payment-summary-money">
             $${formatCurrency(productPriceCents)}
         </div>
